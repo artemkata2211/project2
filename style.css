@@ -105,16 +105,23 @@ body {
   border: 2px solid rgba(255, 255, 255, 1);
 }
 .contact__mail {
+  display: block;
   font-family: "TT Lakes";
   margin-top: 10px;
   margin-left: 15px;
+  text-decoration: none;
+  color: rgba(27, 28, 33, 1);
 }
 .contact__namber {
+  position: relative;
+  display: block;
   font-family: "TT Lakes";
   font-weight: bold;
   font-size: 24px;
   margin-top: 10px;
   margin-left: 15px;
+  text-decoration: none;
+  color: rgba(27, 28, 33, 1);
 }
 .contact__langs {
   display: flex;
@@ -125,9 +132,69 @@ body {
 .contact__lang {
   border: 2px solid rgba(255, 255, 255, 1);
   background-color: rgba(255, 255, 255, 1);
+  display: block;
+  font-family: "TT Lakes";
 }
-
 .contact__lang:hover {
   opacity: 0.5;
   transform: scale(1.05);
+}
+
+.contact__lang:focus {
+  opacity: 0.5;
+}
+.header__burger:hover {
+  transform: scale(1.05) rotate(360deg);
+  transition: all 0.7s ease;
+}
+.header__burger {
+  transition: transform 0.7s ease;
+  border-radius: 50%;
+}
+.header__search:hover {
+  transform: scale(1.05) rotate(360deg);
+  transition: all 0.7s ease;
+}
+.header__search {
+  transition: transform 0.7s ease;
+  border-radius: 50%;
+}
+.contact__chatcopy:hover {
+  transform: scale(1.05) rotate(360deg);
+  transition: all 0.7s ease;
+}
+.contact__chatcopy {
+  transition: transform 0.7s ease;
+  border-radius: 50%;
+}
+.contact__chat:hover {
+  transform: scale(1.05) rotate(360deg);
+  transition: all 0.7s ease;
+}
+.contact__chat {
+  transition: transform 0.7s ease;
+  border-radius: 50%;
+}
+.contact__profile:hover {
+  transform: scale(1.05) rotate(360deg);
+  transition: all 0.7s ease;
+}
+.contact__profile {
+  transition: transform 0.7s ease;
+  border-radius: 50%;
+}
+.contact__namber:hover::after {
+  transition: all 0.4s ease-in;
+  transform: scale(1);
+  opacity: 1;
+}
+.contact__namber::after {
+  background: url(./images/phone_7prc58vk3cvd.svg) no-repeat center;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  content: "";
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  transform: scale(1.5);
 }
